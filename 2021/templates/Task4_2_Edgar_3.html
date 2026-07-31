@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th>Score</th>
+        </tr>
+        {% for score in score3 %}
+        <tr>
+        <td>{{score[0]}}</td>
+        <td>{{score[1]}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</html>

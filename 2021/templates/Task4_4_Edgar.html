@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th> total Score</th>
+        <th>Qualified</th>
+        </tr>
+        {% for score in results %}
+        <tr>
+        <td>{{score[0]}}</td>
+        <td>{{score[1]}}</td>
+        {%if score[1]>250%}
+        <td>Qualified</td>
+        {%else%}
+        <td>You failed</td>
+        {%endif%}
+        </tr>
+        {% endfor %}
+
+    </table>
+</html>
