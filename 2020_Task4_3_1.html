@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <table border="1">
+        <tr>
+        <th>Full name</th>
+        <th>Screen name</th>
+        <th>Identity</th>
+        </tr>
+        {% for result in name %}
+        <tr>
+        <td>{{result[0]}}</td>
+        <td>{{result[1]}}</td>
+        <td>{{result[2]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+</html>
