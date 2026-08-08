@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <table border="1">
+        <tr>
+            <td>Family name</td>
+            <td>Given name</td>
+            <td>Book title</td>
+        </tr>
+        {% for x in result}
+        <tr>
+            <td>
+                {x[0]}
+            </td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>
